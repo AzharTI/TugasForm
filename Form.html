@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h2>Formulir Pendaftaran Anggota Baru</h2>
+
+<section>
+<form>
+<label for="fname" class="nama">Nama Lengkap:
+  <input type="text" id="fname" name="fname" placeholder="masukkan nama anda" required>
+</label><br><br>
+<label for="lname" class="email">Alamat Email:
+  <input type="text" id="email" name="email" placeholder="nama@gmail.com" required>
+</label><br><br>
+<label for="password" class="sandi">Kata Sandi:
+  <input type="password" id="password" name="password" placeholder="masukkan kata sandi" required>
+</label><br>
+
+<div class="ingin">
+  <p>Minat Utama Anda (pilih satu):</p>
+  <input type="radio" id="m1" name="minat" value="WebDevelop">
+  <label for="m1">Web Develop</label>
+  <input type="radio" id="m2" name="minat" value="DesainGrafis">
+  <label for="m2">Desain Grafis</label><br>
+  <input type="radio" id="m3" name="minat" value="KriptoGrafis">
+  <label for="m3">Kripto Grafis</label>
+  <input type="radio" id="m4" name="minat" value="AnalisData">
+  <label for="m4">Analis Data</label><br><br>
+</div>
+
+<div class="ahli">
+  <p>Area Keahlian:</p>
+  <input type="checkbox" id="html" name="html" value="HTML">
+  <label for="html">HTML/CSS</label>
+  <input type="checkbox" id="java" name="java" value="JAVA">
+  <label for="java">JavaScript/Node.js</label>
+  <input type="checkbox" id="py" name="py" value="Python">
+  <label for="py">Python</label><br>
+  <input type="checkbox" id="desain" name="desain" value="Desain">
+  <label for="desain">Desain UI/UX</label>
+  <input type="checkbox" id="pemasaran" name="pemasaran" value="Pemasaran">
+  <label for="pemasaran">Pemasaran Digital</label><br><br>
+</div>
+
+<label for="negara" class="negaraan">Kewarganegaraan:
+  <select id="negara" name="negara" required> 
+        <option name="negara" disabled selected hidden value="">pilih negara</option>
+        <option name="negara" value="Indonesia">Indonesia</option>
+        <option name="negara" value="Thailand">Thailand</option>
+        <option name="negara" value="Filipina">Filipina</option>
+        <option name="negara" value="Rusia">Rusia</option>
+        <option name="negara" value="Singapore">Singapore</option>
+  </select>
+</label><br><br><br>
+  
+  <input type="submit" value="Daftar Sekarang" class="Submit">
+</form>
+</section>
+</main>
+
+
+</body>
+</html>
